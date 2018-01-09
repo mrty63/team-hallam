@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/event.css">
+    <link rel="stylesheet" media="only screen and (min-width : 600px)" href="css/kc.css">
+    <title>Music Events :: Home</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="burgerMenu">
+            <div class="menuLabel"></div>
+            <div class="bars">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <div class="container">
+
+            <h1 class="mobH1"></h1>
+            <nav>
+                <ul>
+                    <li>
+                        <h1>SHEFFIELD INDUSTRIAL MUSEUMS TRUST</h1>
+                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Shelve_Item.html">Shelve Item</a></li>
+                    <li><a href="input_form.html">Item form</a></li>
+
+                    <li class="searchItem">
+                        <form action=""><input type="search" placeholder="Search"></form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="banner">
+            <h2>enter the items details </h2>
+        </div>
+        <div class="content">
+            <div class="main">
+                <div>input form prototype
+                    <form id="new_item">
+                        name:<br>
+                        <input type="text" name="firstname" placeholder="enter name"><br>
+                        <div id="location">
+                            Location<br>
+                            <div id="row_div">
+                                Row<br>
+                                <select id="row">
+                                            <option value="E" style="display:none">
+                                            <option value="A">A</option>
+                                            <option value="B">B</option>
+                                            <option value="C">C</option>
+                                            <option value="D">D</option>
+                                        </select>
+                            </div>
+                            <div id="col_div" class="floating-box">
+                                Column<br>
+                                <select id="col">
+                                        <option value="E" style="display:none">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                    </select>
+                            </div><br>
+                            <div id="choose_side">
+                                choose side <br>
+                                <input type="radio" name="side" id="l" value="L"> Left
+                                <input type="radio" name="side" id="r" value="R"> Right<br>
+                            </div>
+                        </div>
+                        <div id="image" hidden>
+                            choose image<br>
+                            <input type="file" id="myFile">
+                            <img src="" id="img_preview" height="42" width="42"><br>
+
+                            <button type="button" onclick="myFunction()">Try it</button><br>
+                        </div>
+                        <div id="origin">
+                            Origin<br />
+                            <input type="text" id="origin_text" placeholder="enter items origin"><br />
+                        </div>
+                        <div id="use">
+                            Use<br />
+                            <input type="text" id="use_text" placeholder=""><br />
+                        </div>
+                        <div id="date">
+                            Date<br />
+                            <input type="date" id="date_input"><br />
+                        </div>
+                        <div id="description">
+                            Description:<br>
+                            <textarea id="desc_input" name="comment" form="new item" placeholder="Describe THE ITEM here..."></textarea>
+                        </div>
+                        <input type="button" value="Submit" onclick="make_location()"><br />
+
+                    </form>
+
+                </div>
+
+
+
+
+
+                <footer>
+                    <p>&copy; Copyright 2018</p>
+                </footer>
+
+            </div>
+            <script src="js/jquery-3.2.1.min.js"></script>
+            <script src="js/main.js"></script>
+</body>
+
+</html>

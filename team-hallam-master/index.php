@@ -2,26 +2,22 @@
 <html>
 <head>
 	<title>Kelham Island Musuem</title>
+	<link rel="stylesheet" type="text/css" href="css/main_index.css">
+</head>
+<body>
+	<header>
+	<div class="search-container">
 	<ul>
-		
-<!-- <li><a href="index.html"> Home</a></li>  
-<li><a href="gallery.html"> Gallery</a></li>
-   -->
-  <div class="search-container">
-</ul> 
-
- <section class="searchBox">
- 	<!-- the action attrebute defines the action to be performed when item searched
- 		the form data is sent to a page on the server which handels the data-->
+ 		
+	</ul> 
+ 	<section class="searchBox">
 	<form action="action_page.php" method="get">		    
 		<input type="search" placeholder="What are you looking for?">		    	
 		<button>Search</button>
 	</form>
-</section>
-</div>
-</head>
-<body>
-		 <link rel="stylesheet" type="text/css" href="css/main.css">
+	</section>
+		</div>
+</header>
 		<div class="backgroundImg">
 			<img src="images/KelhamStore.jpg">
   		<div class="bg-text">

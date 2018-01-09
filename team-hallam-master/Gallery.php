@@ -4,15 +4,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" media="only screen and (min-width : 600px)" href="css/kc.css">
+	<link rel="stylesheet" href="css/galleryStyle.css">
 	<title>Music Events :: Home</title>
 </head>
 
 <body>
+ <div class = "backgroundContainer">
 	<header>
+	<div class = "headerContainer">
 		<img src="images/2016-08-01_579f5b5ad6bba_kelhamislandlogo2.bmp" 
 		class="headerLogo">
 		<h1>Kelham Island Museum - Shelves</h1>
+	</div>
 	</header>
 		<?php 
 			require_once('includes/conn.inc.php');
@@ -25,17 +28,24 @@
 		<h2>Click on Exhibit below for more information</h2>
 
 	<div class='imageGrid'>
-		<?php
-			while ($row = $stmt->fetchObject()) 
-			{
-				echo "<div class='galleryImages'>
-				<a href='shelve_Item.php?exhibitID={$row->exhibitID}' target='_self'>
-				<img src='{$row->image}' class = 'imageInGallery'alt='icon'>
-				</a><p>{$row->location}</p></div>";
-			}
-		?>	
+		<div class='galleryGrid'>
+			
+			<?php
+				while ($row = $stmt->fetchObject()) 
+				{
+					echo 
+					"<div class='galleryCell'>
+						<a href='shelve_Item.php?exhibitID={$row->exhibitID}' class='galleryCellImage' target='_self'>
+						<img src='{$row->image}' alt='icon'>
+						</a>
+						<p>{$row->location}</p>
+					</div>";
+				}
+			?>	
+			
+		</div>
 	</div>
-
+ </div>
 	<footer>
 		<p>&copy; Copyright 2018</p>
 	</footer>

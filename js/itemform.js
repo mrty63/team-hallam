@@ -34,6 +34,7 @@ function make_location() {
     var n3w = row.concat(col);
     n3w = n3w.concat(side);
     alert(n3w);
+    alter(n3w);
 }
 
 function validate_side() {
@@ -61,4 +62,24 @@ function validate_col() {
         rw = true
     }
     return rw;
+}
+//location help
+function show_loc_help() {
+    var x = document.getElementById("loc_help");
+    if (x.style.display == "none") {
+
+        x.style.display = "block";
+        return;
+    }
+    if (x.style.display == "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+function alter(n3w) {
+    document.getElementById("itemloc").value = n3w;
+    var x = document.getElementById("loc_help");
+    x.style.display = "none";
 }

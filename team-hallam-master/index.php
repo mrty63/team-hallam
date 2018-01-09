@@ -1,26 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/event.css">
-<link rel="stylesheet" media="only screen and (min-width : 600px)" href="css/kc.css">
-<title>Music Events :: Home</title>
-</head>
-<header>
-</header>
+	<title>Kelham Island Musuem</title>
+	<ul>
+		
+<!-- <li><a href="index.html"> Home</a></li>  
+<li><a href="gallery.html"> Gallery</a></li>
+   -->
+  <div class="search-container">
+</ul> 
 
-<body>
-
-<div class="imagewrap">
-  <img src="images/Sheaf and Don 050.JPG" class="mainImage" alt='icon' />
-  <p>Please click here to enter.</p>
-</div>       
-				
-	
+ <section class="searchBox">
+ 	<!-- the action attrebute defines the action to be performed when item searched
+ 		the form data is sent to a page on the server which handels the data-->
+	<form action="action_page.php" method="get">		    
+		<input type="search" placeholder="What are you looking for?">		    	
+		<button>Search</button>
+	</form>
+</section>
 </div>
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/main.js"></script>
-</body>
+</head>
+<body>
+		 <link rel="stylesheet" type="text/css" href="css/main.css">
+		<div class="backgroundImg">
+			<img src="images/KelhamStore.jpg">
+  		<div class="bg-text">
+   		 <h1> Welcome To Kelham Island Musuem</h1>
+   <h3>description</h3>
+    <button>Click Here</button>
+  </div>
 
+</body>
 </html>
+
+

@@ -33,7 +33,7 @@ function make_location() {
 
     var n3w = row.concat(col);
     n3w = n3w.concat(side);
-    alert(n3w);
+    console.log(n3w);
     alter(n3w);
 }
 

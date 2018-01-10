@@ -6,22 +6,43 @@
     border: 1px solid #888;
 }
 
-#row_div {
+input {
+    width: 100%;
+}
+
+#l,
+#r {
+    width: 20px;
+}
+
+#row_div,
+#col_div {
     display: inline-block;
+    text-align: center;
     width: 60px;
     padding-right: 30px;
     padding-left: 30px;
 }
 
-#col_div {
+
+/*#col_div {
     width: 60px;
     display: inline-block;
     padding-left: 30px;
     padding-right: 30px;
-}
+}*/
 
 #choose_side {
     float: none;
+    width: 60%;
+    margin: auto;
+}
+
+#input_form {
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+    border: 1px solid #888;
 }
 
 #location {

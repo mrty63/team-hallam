@@ -14,30 +14,14 @@
 <body>
 
     <header>
-        <div class="burgerMenu">
-            <div class="menuLabel"></div>
-            <div class="bars">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-        </div>
         <div class="container">
 
             <h1 class="mobH1"></h1>
             <nav>
                 <ul>
-                    <li>
-                        <h1>SHEFFIELD INDUSTRIAL MUSEUMS TRUST</h1>
-                    </li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Login.html">Login</a></li>
-                    <li><a href="Gallery.html">Gallery</a></li>
-                    <li><a href="Shelve_Item.html">Shelve Item</a></li>
+                    <a href="index.php "><img src="images\logo.bmp" width="300" height="160"></a>
+                    <h1>SHEFFIELD INDUSTRIAL MUSEUMS TRUST</h1>
 
-                    <li class="searchItem">
-                        <form action=""><input type="search" placeholder="Search"></form>
-                    </li>
                 </ul>
             </nav>
         </div>
@@ -49,17 +33,20 @@
         </div>
         <div class="content">
             <div class="main">
-                <div>input form prototype
+                <div id="input_form">input form prototype
                     <form id="new_item">
                         name:<br>
-                        <input type="text" name="firstname" placeholder="enter name" required><br>
-                        <div>
-                            <h2>Location</h2>
-                            <input type="text" id="itemloc" placeholder="enter location"><br>
-                            <button type="button" onclick="show_loc_help()">location help</button>
+                        <input type="text" name="firstname" placeholder="enter name"><br>
 
+                        <div id="location_div">
+                            <h2>Location</h2>
+                            <input type="text" name="location" placeholder="" id="itemloc" required>
+
+                            <!-- <img src="https://i.imgur.com/2zN66sqb.jpg" height="80" width="80" onclick="show_loc_help()"> -->
+
+                            <button type="button" onclick="show_loc_help()">location help</button>
                             <div id="loc_help" hidden>
-                                <form>
+                                <form id="loc_build">
                                     <div id="location">
                                         <h3>
                                             Location<br>
@@ -67,11 +54,11 @@
                                         <div id="row_div">
                                             Row<br>
                                             <select id="row">
-                                                            <option value="E" style="display:none">
-                                                            <option value="A">A</option>
-                                                            <option value="B">B</option>
-                                                            <option value="C">C</option>
-                                                            <option value="D">D</option>
+                                                            <option value="E " style="display:none">
+                                                            <option value="A ">A</option>
+                                                            <option value="B ">B</option>
+                                                            <option value="C ">C</option>
+                                                            <option value="D ">D</option>
                                                         </select>
                                         </div>
                                         <div id="col_div" class="floating-box">
@@ -92,38 +79,32 @@
                                             <input type="radio" name="side" id="l" value="L"> Left
                                             <input type="radio" name="side" id="r" value="R"> Right<br>
                                         </div>
-                                        <input type="button" id="makeloc" onclick="make_location()" value="enter">
+                                        <input type="button" id="makeloc " onclick="make_location() " value="enter ">
 
                                     </div>
                                 </form>
                             </div>
                         </div>
 
-
-                        <div id="image" hidden>
-                            choose image<br>
-                            <input type="file" id="myFile">
-                            <img src="" id="img_preview" height="42" width="42"><br>
-
-                            <button type="button" onclick="myFunction()">Try it</button><br>
-                        </div>
                         <div id="origin">
                             Origin<br />
-                            <input type="text" id="origin_text" placeholder="enter items origin"><br />
+                            <input type="text " id="origin_text " placeholder="enter items origin " required><br />
                         </div>
                         <div id="use">
                             Use<br />
-                            <input type="text" id="use_text" placeholder=""><br />
+                            <input type="text " id="use_text " placeholder=" "><br />
                         </div>
                         <div id="date">
                             Date<br />
-                            <input type="date" id="date_input"><br />
+                            <input type="date " id="date_input "><br />
                         </div>
                         <div id="description">
                             Description:<br>
-                            <textarea id="desc_input" name="comment" form="new item" placeholder="Describe THE ITEM here..."></textarea>
+                            <textarea id="desc_input" name="comment " form="new item " placeholder="Describe THE ITEM here... " rows=5 cols=69></textarea>
                         </div>
-                        <input type="submit" value="Submit"><br />
+                        <br>
+                        <br>
+                        <input type="submit" value="Submit" form="new_item"><br />
 
                     </form>
                     <br>
@@ -138,9 +119,9 @@
                 </footer>
 
             </div>
-            <!-- <script src="js/jquery-3.2.1.min.js"></script> -->
-            <!-- <script src="js/main.js"></script> -->
-            <script src="js\itemform.js"></script>
+            <!-- <script src="js/jquery-3.2.1.min.js "></script> -->
+            <!-- <script src="js/main.js "></script> -->
+            <script src="js\itemform.js "></script>
 
 </body>
 

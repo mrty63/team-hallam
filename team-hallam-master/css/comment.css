@@ -1,0 +1,17 @@
+#comment_body {
+    border: 2px solid black;
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 25px;
+    min-width: 550px;
+    min-height: 150px;
+}
+
+[type=submit] {
+    float: right;
+    position: relative;
+    margin-top: 5px;
+    right: 40px;
+    height: 20px;
+}

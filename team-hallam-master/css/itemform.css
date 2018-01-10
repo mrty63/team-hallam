@@ -24,14 +24,6 @@ input {
     padding-left: 30px;
 }
 
-
-/*#col_div {
-    width: 60px;
-    display: inline-block;
-    padding-left: 30px;
-    padding-right: 30px;
-}*/
-
 #choose_side {
     float: none;
     width: 60%;
@@ -65,10 +57,11 @@ input {
 
 button[type=button],
 input[type=button] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
+    float: right;
     cursor: pointer;
+}
+
+body {
+    margin: auto;
+    width: 600px;
 }
